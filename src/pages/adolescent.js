@@ -3,6 +3,7 @@ import Image from "next/image";
 import PositiveGraph from "../../public/resources/adolescent-positive.png";
 import NegativeGraph from "../../public/resources/adolescent-negative.png";
 import Excel from "../../public/resources/excel.png";
+import Loader from "@/Components/Loader";
 
 export default function adolescent() {
   const [Loading, setLoading] = useState(true);
@@ -56,7 +57,7 @@ export default function adolescent() {
         <div className={`p-5 inline-block mt-10`}>
           {positiveGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+             <Loader />
             ) : (
               <Image
                 width="500"
@@ -68,7 +69,7 @@ export default function adolescent() {
 
           {negativeGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+             <Loader />
             ) : (
               <Image
                 width="500"

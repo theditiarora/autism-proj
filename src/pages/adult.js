@@ -4,6 +4,7 @@ import AdultGraph from "../../public/resources/adultgraph.png";
 import PositiveGraph from "../../public/resources/adult-positive.png";
 import NegativeGraph from "../../public/resources/adult-negative.png";
 import Excel from "../../public/resources/excel.png";
+import Loader from "@/Components/Loader";
 
 export default function adult() {
   const [Loading, setLoading] = useState(true);
@@ -57,7 +58,7 @@ export default function adult() {
         <div className={`p-5 inline-block mt-10`}>
           {positiveGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+              <Loader />
             ) : (
               <Image
                 width="500"
@@ -69,7 +70,7 @@ export default function adult() {
 
           {negativeGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+              <Loader />
             ) : (
               <Image
                 width="500"

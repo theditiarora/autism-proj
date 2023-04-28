@@ -3,6 +3,7 @@ import Image from "next/image";
 import PositiveGraph from "../../public/resources/toddler-positive.png";
 import NegativeGraph from "../../public/resources/toddler-negative.png";
 import Excel from "../../public/resources/excel.png";
+import Loader from "@/Components/Loader";
 
 export default function toddler() {
   const [Loading, setLoading] = useState(true);
@@ -57,7 +58,7 @@ export default function toddler() {
         <div className={`p-5 inline-block mt-10`}>
           {positiveGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+             <Loader />
             ) : (
               <Image
                 width="500"
@@ -69,7 +70,7 @@ export default function toddler() {
 
           {negativeGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+             <Loader />
             ) : (
               <Image
                 width="500"

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import PositiveGraph from "../../public/resources/child-positive.png";
 import NegativeGraph from "../../public/resources/child-negative.png";
-import Excel from "../../public/resources/excel.png";
+import Loader from "@/Components/Loader";
 
 export default function child() {
   const [Loading, setLoading] = useState(true);
@@ -56,7 +56,8 @@ export default function child() {
         <div className={`p-5 inline-block mt-10`}>
           {positiveGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+              // <Image width="500" height="500" src={Excel} alt={"excel"} />
+              <Loader />
             ) : (
               <Image
                 width="500"
@@ -68,7 +69,7 @@ export default function child() {
 
           {negativeGraph &&
             (Loading ? (
-              <Image width="500" height="500" src={Excel} alt={"excel"} />
+              <Loader />
             ) : (
               <Image
                 width="500"
