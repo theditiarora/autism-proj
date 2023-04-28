@@ -4,7 +4,7 @@ import PositiveGraph from "../../public/resources/adolescent-positive.png";
 import NegativeGraph from "../../public/resources/adolescent-negative.png";
 import Excel from "../../public/resources/excel.png";
 
-const Adolescent = () => {
+export default function adolescent() {
   const [Loading, setLoading] = useState(true);
   const [positiveGraph, setPositiveGraph] = useState(false);
   const [negativeGraph, setNegativeGraph] = useState(false);
@@ -18,8 +18,8 @@ const Adolescent = () => {
   }, [positiveGraph, negativeGraph]);
 
   return (
-    <div>
-      <div className="bg-[url(/bg.jpg)] bg-cover text-white px-20 py-12 min-h-[100vh] flex flex-col gap-10 items-center">
+    <div className="bg-[url(/bg.jpg)] bg-cover text-white px-20 py-12 min-h-[100vh]">
+      <div className="flex flex-col gap-10 items-center">
         <h1 className="text-2xl font-semibold">Adolescent</h1>
         <div className="flex gap-10">
           <button
@@ -81,6 +81,4 @@ const Adolescent = () => {
       </div>
     </div>
   );
-};
-
-export default Adolescent;
+}

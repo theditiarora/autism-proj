@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import PositiveGraph from "../../public/resources/child-positive.png";
-import NegativeGraph from "../../public/resources/child-negative.png";
+import PositiveGraph from "../../public/resources/toddler-positive.png";
+import NegativeGraph from "../../public/resources/toddler-negative.png";
 import Excel from "../../public/resources/excel.png";
 
-const Child = () => {
+export default function toddler() {
   const [Loading, setLoading] = useState(true);
   const [positiveGraph, setPositiveGraph] = useState(false);
   const [negativeGraph, setNegativeGraph] = useState(false);
@@ -18,9 +18,10 @@ const Child = () => {
   }, []);
 
   return (
-    <div>
-      <div className="bg-[url(/bg.jpg)] bg-cover text-white px-20 py-12 min-h-[100vh] flex flex-col gap-10 items-center">
-        <h1 className="text-2xl font-semibold">Child</h1>
+    <div className="bg-[url(/bg.jpg)] bg-cover text-white px-20 py-12 min-h-[100vh]">
+      <div className="flex flex-col gap-10 items-center">
+        <h1 className="text-2xl font-semibold">Toddler</h1>
+
         <div className="flex gap-10">
           <button
             onClick={() => {
@@ -81,6 +82,4 @@ const Child = () => {
       </div>
     </div>
   );
-};
-
-export default Child;
+}
