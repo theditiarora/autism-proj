@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import PositiveGraph from "./resources/adolescent-positive.png";
@@ -75,7 +74,7 @@ const Adolescent = () => {
                 width="500"
                 height="500"
                 src={NegativeGraph}
-                alt={"positive graph"}
+                alt={"negative graph"}
               />
             ))}
         </div>
