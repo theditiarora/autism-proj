@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import PositiveGraph from "./resources/child-positive.png";
-import NegativeGraph from "./resources/child-negative.png";
-import Excel from "./resources/excel.png";
+import PositiveGraph from "../../public/resources/child-positive.png";
+import NegativeGraph from "../../public/resources/child-negative.png";
+import Excel from "../../public/resources/excel.png";
 
 const Child = () => {
   const [Loading, setLoading] = useState(true);

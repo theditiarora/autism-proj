@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import AdultGraph from "./resources/adultgraph.png";
-import PositiveGraph from "./resources/adult-positive.png";
-import NegativeGraph from "./resources/adult-negative.png";
-import Excel from "./resources/excel.png";
+import AdultGraph from "../../public/resources/adultgraph.png";
+import PositiveGraph from "../../public/resources/adult-positive.png";
+import NegativeGraph from "../../public/resources/adult-negative.png";
+import Excel from "../../public/resources/excel.png";
 
 const Adult = () => {
   const [Loading, setLoading] = useState(true);
