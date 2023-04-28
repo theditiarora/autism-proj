@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import PositiveGraph from "../../public/resources/child-positive.png";
 import NegativeGraph from "../../public/resources/child-negative.png";
-import Loader from "@/Components/Loader";
+import Loader from "@/pages/Loader";
 
 export default function child() {
   const [Loading, setLoading] = useState(true);

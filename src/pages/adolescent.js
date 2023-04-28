@@ -3,7 +3,7 @@ import Image from "next/image";
 import PositiveGraph from "../../public/resources/adolescent-positive.png";
 import NegativeGraph from "../../public/resources/adolescent-negative.png";
 import Excel from "../../public/resources/excel.png";
-import Loader from "@/Components/Loader";
+import Loader from "@/pages/Loader";
 
 export default function adolescent() {
   const [Loading, setLoading] = useState(true);
