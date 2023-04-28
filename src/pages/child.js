@@ -3,6 +3,8 @@ import Image from "next/image";
 import PositiveGraph from "../../public/resources/child-positive.png";
 import NegativeGraph from "../../public/resources/child-negative.png";
 import Loader from "@/pages/Loader";
+import { BsArrowLeft } from 'react-icons/bs';
+import Link from "next/link";
 
 export default function child() {
   const [Loading, setLoading] = useState(true);
@@ -21,6 +23,8 @@ export default function child() {
     <div className="bg-[url(/bg.jpg)] bg-cover text-white px-20 py-12 min-h-[100vh]">
       <div className="flex flex-col gap-10 items-center">
         <h1 className="text-2xl font-semibold">Child</h1>
+        <Link href='/'><BsArrowLeft className='absolute left-10 top-5 text-5xl p-2 hover:bg-black hover:bg-opacity-50 rounded-md cursor-pointer' /></Link>
+
         <div className="flex gap-10">
           <button
             onClick={() => {
