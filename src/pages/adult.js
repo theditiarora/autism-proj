@@ -84,5 +84,5 @@ export default function adult() {
         </div>
       </div>
     </div>
-  );
+  )
 }
