@@ -69,7 +69,6 @@ export default function adult() {
                 alt={"positive graph"}
               />
             ))}
-
           {negativeGraph &&
             (Loading ? (
               <Loader />
